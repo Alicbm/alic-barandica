@@ -1,0 +1,39 @@
+.Detail {
+  padding: 20px 10px;
+  border-bottom: 1px solid #1D2024;
+}
+
+.Detail:hover {
+  background-color: var(--secondary-bg);
+}
+
+.Detail-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Detail-title span {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--light);
+}
+
+.Detail-description {
+  max-width: 950px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .6s ease;
+}
+
+.Detail-description.active {
+  max-height: 500px;
+  transition: max-height 2s ease-in-out;
+}
+
+@media(min-width: 1024px) {
+  .Detail {
+    padding: 20px 30px;
+  }
+}
+

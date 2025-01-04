@@ -1,0 +1,83 @@
+.Tools {
+  padding: 80px 0 20px 0;
+}
+
+.Tools-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 20px;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+.Tools-container__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Diseño de las cartas para el hover */
+
+.Tools-container__item:hover .Tools-container__item-icon {
+  height: 100%;
+  transform: scale(1.8) translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+  border: 1px solid #0F7A6A;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.Tools-container__item:hover .Tools-container__item-icon__icon {
+  font-size: 4rem;
+  margin-bottom: 5px;
+}
+
+.Tools-container__item .Tools-container__item-icon__text {
+  display: none;
+}
+
+.Tools-container__item:hover .Tools-container__item-icon__text {
+  display: block;
+  font-size: .8rem;
+}
+
+.Tools-container__item:hover p {
+  display: none;
+  padding: 0;
+}
+
+/* fin diseño para las cartas del hover */
+
+
+.Tools-container__item div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-bg);
+  font-size: 6rem;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.Tools-container__item p {
+  width: 100%;
+  background-color: var(--secondary-bg);
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .Tools-container {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .Tools-container__item div {
+    font-size: 7rem;
+  }
+}

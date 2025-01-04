@@ -1,0 +1,33 @@
+.TittleSection-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.TittleSection-title__arrow {
+  font-size: 1.5rem;
+  color: var(--light);
+}
+
+.TittleSection-description {
+  margin-bottom: 40px;
+}
+
+@media(min-width: 579px) {
+  .TittleSection {
+    padding-left: 10px;
+  }
+
+  .TittleSection-description {
+    max-width: 90%;
+  }
+}
+
+@media(min-width: 867px) {
+  .TittleSection-description {
+    max-width: 80%;
+    font-size: 2rem;
+  }  
+}
+
