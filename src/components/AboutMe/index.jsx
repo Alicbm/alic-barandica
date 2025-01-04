@@ -23,13 +23,13 @@ export function AboutMe() {
         <Card
           icon={<FaChalkboardTeacher />}
           title="Asesorías"
-          description="Líder del laboratorio del analítica de datos de la Universidad del Magdalena"
+          description="Líder del laboratorio de analítica de datos de la Universidad del Magdalena"
           shadow={true}
         />
         <Card
           icon={<GiTeacher />}
           title="Monitorias"
-          description="Dicte clases sobre lenguajes de programación como Python y R"
+          description="Dicté clases sobre lenguajes de programación como Python y R"
         />
         <Card
           icon={<FaBook />}
@@ -40,7 +40,7 @@ export function AboutMe() {
         <Card
           icon={<FaLaptopCode />}
           title="Desarrollador"
-          description="Trabaje durante un año como desarrollador FullStack"
+          description="Trabajé durante un año como desarrollador FullStack"
         />
         <Card
           icon={<SiPlatzi />}

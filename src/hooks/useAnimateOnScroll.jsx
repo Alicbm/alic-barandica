@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useAnimateOnScroll = (selector, options = { threshold: 0.2 }) => {
+const useAnimateOnScroll = (selector, options = { threshold: 0.1 }) => {
   useEffect(() => {
     const elements = document.querySelectorAll(selector);
 

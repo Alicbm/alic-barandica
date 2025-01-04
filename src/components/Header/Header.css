@@ -46,6 +46,7 @@
 
 
 .header-menu.active li {
+  display: flex;
   font-size: 1.6rem;
   padding: 15px 0;
   padding-left: 10px;
@@ -53,6 +54,8 @@
 }
 
 .header-menu li a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   color: var(--secondary-text);
 }

@@ -21,50 +21,60 @@ export function Header() {
       )}
 
       <ul className={state ? "header-menu active" : "header-menu inactive"}>
-        <li
-          className={section == "Inicio" ? "active" : ""}
-          onClick={() => { 
-            setSection("Inicio");
-            setState(false);
-           }}
-        >
-          <a href="#Home">Inicio</a>
+        <li className={section == "Inicio" ? "active" : ""}>
+          <a
+            href="#Home"
+            onClick={() => {
+              setSection("Inicio");
+              setState(false);
+            }}
+          >
+            Inicio
+          </a>
         </li>
-        <li
-          className={section == "Sobre mi" ? "active" : ""}
-          onClick={() => {
-            setSection("Sobre mi")
-            setState(false);
-          }}
-        >
-          <a href="#AboutMe">Sobre mi</a>
+        <li className={section == "Sobre mi" ? "active" : ""}>
+          <a
+            href="#AboutMe"
+            onClick={() => {
+              setSection("Sobre mi");
+              setState(false);
+            }}
+          >
+            Sobre mi
+          </a>
         </li>
-        <li
-          className={section == "Proyectos" ? "active" : ""}
-          onClick={() => {
-            setSection("Proyectos");
-            setState(false);
-          }}
-        >
-          <a href="#Proyects">Proyectos</a>
+        <li className={section == "Proyectos" ? "active" : ""}>
+          <a
+            href="#Proyects"
+            onClick={() => {
+              setSection("Proyectos");
+              setState(false);
+            }}
+          >
+            Proyectos
+          </a>
         </li>
-        <li
-          className={section == "Herramientas" ? "active" : ""}
-          onClick={() => {
-            setSection("Herramientas");
-            setState(false);
-          }}
-        >
-          <a href="#Tools">Herramientas</a>
+        <li className={section == "Herramientas" ? "active" : ""}>
+          <a
+            href="#Tools"
+            onClick={() => {
+              setSection("Herramientas");
+              setState(false);
+            }}
+          >
+            Herramientas
+          </a>
         </li>
-        <li
-          className={section == "Detalles" ? "active" : ""}
-          onClick={() => {
-            setSection("Detalles");
-            setState(false);
-          }}
-        >
-          <a href="#DetailsAboutMe">Detalles</a>
+        <li className={section == "Detalles" ? "active" : ""}>
+          <a
+            href="#DetailsAboutMe"
+            onClick={() => {
+              setSection("Detalles");
+              setState(false);
+            }}
+          >
+            Detalles
+          </a>
         </li>
       </ul>
 
