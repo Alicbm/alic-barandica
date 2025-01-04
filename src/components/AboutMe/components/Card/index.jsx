@@ -1,9 +1,12 @@
+import useAnimateOnScroll from '../../../../hooks/useAnimateOnScroll';
 import './Card.css'
 
 export function Card ({ icon, title, description, shadow = false }) {
+  useAnimateOnScroll(".animate-on-scroll");
+
   return(
     <div className={`Card ${shadow ? 'shadow' : ''}`}>
-      <div className="Card-icon">
+      <div className="Card-icon animate-on-scroll">
         {icon}
       </div>
       <div className="Card-content">

@@ -23,7 +23,7 @@
 
 .Tools-container__item:hover .Tools-container__item-icon {
   height: 100%;
-  transform: scale(1.8) translateY(-10px);
+  transform: scale(1.4) translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
   border: 1px solid #0F7A6A;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
@@ -40,7 +40,7 @@
 
 .Tools-container__item:hover .Tools-container__item-icon__text {
   display: block;
-  font-size: .8rem;
+  font-size: .9rem;
 }
 
 .Tools-container__item:hover p {
@@ -79,5 +79,13 @@
 
   .Tools-container__item div {
     font-size: 7rem;
+  }
+
+  .Tools-container__item:hover .Tools-container__item-icon {
+    transform: scale(1.8) translateY(-10px);
+  }
+  
+  .Tools-container__item:hover .Tools-container__item-icon__text {
+    font-size: .8rem;
   }
 }

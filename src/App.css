@@ -1,11 +1,30 @@
 .App-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.App-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #060606 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.App-container__content {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 @media(min-width: 1024px) {
-  .App-container {
+  .App-container__content {
     width: 85%;
   }
 }

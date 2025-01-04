@@ -4,11 +4,14 @@ import informe_cepal from '../../images/informe_cepal.png';
 import informe_mercado_laboral_col from '../../images/informe_mercado_laboral_col.png';
 import pegado_geih from '../../images/tasa_desempleo.png';
 import automatizacion_cepal from '../../images/automatizacion_cepal.png';
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 import './Proyects.css'
 
 export function Proyects() {
+  useAnimateOnScroll(".animate-on-scroll");
+
   return (
-    <section className="Proyects" id="Proyects">
+    <section className="Proyects animate-on-scroll" id="Proyects">
       <TittleSection 
         title="Explora mis proyectos"
         description="Automatización de procesos, extracción de datos, desarrollo de plataformas y más" 

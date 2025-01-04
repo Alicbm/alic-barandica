@@ -1,5 +1,6 @@
 import { TittleSection } from "../../utils/TittleSection";
 import { Detail } from "./components/Detail";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 import './DetailsAboutMe.css';
 
 const listDetails = [
@@ -30,8 +31,10 @@ const listDetails = [
 ]
 
 export function DetailsAboutMe () {
+  useAnimateOnScroll(".animate-on-scroll");
+
   return (
-    <section className="DetailsAboutMe" id="DetailsAboutMe">
+    <section className="DetailsAboutMe animate-on-scroll" id="DetailsAboutMe">
       <TittleSection 
         title="Detalles sobre mi"
         description="Conocer realmente a una persona no es fácil, pero aquí te dejo algunos detalles que te ayudarán a comprender mejor quién soy, tanto profesional como personalmente."

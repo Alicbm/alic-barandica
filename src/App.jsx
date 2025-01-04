@@ -14,10 +14,12 @@ export function App() {
     <main className="App">
       <Home />
       <div className="App-container">
+        <div className="App-container__content">
         <AboutMe />
         <Proyects />
         <Tools />
         <DetailsAboutMe />
+        </div>
       </div>
     </main>
       <Footer />

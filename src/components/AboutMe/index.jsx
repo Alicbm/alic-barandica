@@ -6,11 +6,14 @@ import { GrLinkedin } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa6";
 import { Card } from "./components/Card";
 import { TittleSection } from "../../utils/TittleSection";
+import useAnimateOnScroll from "../../hooks/useAnimateOnScroll";
 import "./AboutMe.css";
 
 export function AboutMe() {
+  useAnimateOnScroll(".animate-on-scroll");
+
   return (
-    <section className="AboutMe" id="AboutMe">
+    <section className="AboutMe animate-on-scroll" id="AboutMe">
       <TittleSection
         title="Conoce un poco sobre mí" 
         description="Economista con enfoque en análisis de datos y programación. Platzinauta apasionado por el aprendizaje continuo."

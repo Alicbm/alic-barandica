@@ -1,5 +1,6 @@
 import { HiExternalLink } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa6";
+import useAnimateOnScroll from "../../../../hooks/useAnimateOnScroll";
 import "./Proyect.css";
 
 export function Proyect({
@@ -9,8 +10,11 @@ export function Proyect({
   web_url,
   github_url,
 }) {
+
+  useAnimateOnScroll(".animate-on-scroll");
+
   return (
-    <div className="Proyect">
+    <div className="Proyect animate-on-scroll">
       <div className="Proyect-container">
         <div className="Proyect-container__title">
           <h4>{title}</h4>
